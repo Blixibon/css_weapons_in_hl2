@@ -13,8 +13,8 @@ Scheme
 			"1"
 			{
 				"name"		"cs"
-				"tall"		"68" // 64
-				"tall_hidef"	"62" // 58
+				"tall"		"92" // 64
+				"tall_hidef"	"86" // 58
 				"weight"	"0"
 				"antialias" "1"
 				"additive"	"1"
@@ -26,8 +26,8 @@ Scheme
 			"1"
 			{
 				"name"		"cs"
-				"tall"		"68" // 64
-				"tall_hidef"	"62" // 58
+				"tall"		"92" // 64
+				"tall_hidef"	"86" // 58
 				"weight"	"0"
 				"antialias" "1"
 				"blur"		"5"
@@ -48,6 +48,47 @@ Scheme
 				"custom"	"1"
 			}
 		}
+		
+		"CSS_WeaponIcons2"
+		{
+			"1"
+			{
+				"name"		"Counter-Strike"
+				"tall"		"92" // 64
+				"tall_hidef"	"86" // 58
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		"CSS_WeaponIconsSelected2"
+		{
+			"1"
+			{
+				"name"		"Counter-Strike"
+				"tall"		"92" // 64
+				"tall_hidef"	"86" // 58
+				"weight"	"0"
+				"antialias" "1"
+				"blur"		"5"
+				"scanlines"	"2"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
+		"CSS_WeaponIconsSmall2"
+		{
+			"1"
+			{
+				"name"		"Counter-Strike"
+				"tall"		"32"
+				"weight"	"0"
+				"antialias" "1"
+				"additive"	"1"
+				"custom"	"1"
+			}
+		}
 	}
 
 	CustomFontFiles
@@ -56,6 +97,7 @@ Scheme
 		"2"		"resource/HL2crosshairs.ttf"
 		"3"		"resource/HL2EP2.ttf"
 		"4"		"resource/cs.ttf" // CS:S weapons
+		"5"		"resource/cstrike.ttf" // CS:S weapons
 	}
 
 }

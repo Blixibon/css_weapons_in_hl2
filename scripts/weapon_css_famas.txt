@@ -1,39 +1,38 @@
-// Glock-18
+// FAMAS
 
 WeaponData
 {
 	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"	"#HL2_CSS_Glock18"
-	"viewmodel"			"models/weapons/v_pist_glock18.mdl"
-	"playermodel"		"models/weapons/w_pist_glock18.mdl"
-	"anim_prefix"		"pistol"
-	"bucket"			"1"
-	"bucket_position"	"0"
+	"printname"	"#HL2_CSS_FAMAS"
+	"viewmodel"			"models/weapons/v_rif_famas.mdl"
+	"playermodel"		"models/weapons/w_rif_famas.mdl"
+	"anim_prefix"		"anim"
+	"bucket"			"2"
+	"bucket_position"	"1"
 	"bucket_360"			"0"
 	"bucket_position_360"	"0"
 
-	"clip_size"			"20"
-	"primary_ammo"		"Pistol"
+	"clip_size"			"25"
+	"primary_ammo"		"556nato"
 	"secondary_ammo"	"None"
 
 	"weight"		"2"
 	"rumble"		"1"
 	"item_flags"		"0"
 	
-	"BuiltRightHanded"	"0"
+	"BuiltRightHanded"	"1"
 	"AllowFlipping"		"1"
-	"viewmodel_fov"		"75"
+	"viewmodel_fov"		"70"
 
 	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
 	SoundData
 	{
-		"reload_npc"	"Weapon_Glock.NPC_Reload"
-		"empty"			"Default.ClipEmpty_Pistol"
-		"single_shot"	"Weapon_Glock.Single"
-		"single_shot_npc"	"Weapon_Glock.NPC_Single"
-		"special1"		"Weapon_Glock.Special1"
-		"special2"		"Weapon_Glock.Special2"
-		"burst"			"Weapon_Glock.Burst"
+		"reload_npc"	"Weapon_FAMAS.NPC_Reload"
+		"empty"			"Default.ClipEmpty_Rifle"
+		"single_shot"	"Weapon_FAMAS.Single"
+		"single_shot_npc"	"Weapon_FAMAS.NPC_Single"
+		"special1"		"Weapon_FAMAS.Special1"
+		"special2"		"Weapon_FAMAS.Special2"
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.
@@ -42,22 +41,22 @@ WeaponData
 		"weapon"
 		{
 				"font"		"CSS_WeaponIcons"
-				"character"	"c"
+				"character"	"t"
 		}
 		"weapon_s"
 		{	
 				"font"		"CSS_WeaponIconsSelected"
-				"character"	"c"
+				"character"	"t"
 		}
 		"weapon_small"
 		{
 				"font"		"CSS_WeaponIconsSmall"
-				"character"	"c"
+				"character"	"t"
 		}
 		"ammo"
 		{
 				"font"		"WeaponIconsSmall"
-				"character"	"p"
+				"character"	"r"
 		}
 		"crosshair"
 		{

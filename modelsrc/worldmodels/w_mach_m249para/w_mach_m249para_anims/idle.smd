@@ -1,0 +1,15 @@
+// Created by Crowbar 0.71
+version 1
+nodes
+  0 "ValveBiped" -1
+  1 "ValveBiped.weapon_bone" 0
+  2 "ValveBiped.weapon_bone_Clip" 1
+  3 "ValveBiped.flash" 1
+end
+skeleton
+  time 0
+    0 0.000000 0.000000 0.000000 1.570674 0.000061 -0.000061
+    1 1.420404 4.371634 0.692094 -0.047938 0.000000 0.000000
+    2 -0.305385 -4.371634 5.839864 0.000000 0.000000 0.000000
+    3 -1.230863 0.057261 27.746819 0.037811 -0.003231 0.027303
+end
