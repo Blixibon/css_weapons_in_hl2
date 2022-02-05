@@ -26,27 +26,31 @@ Here's a small list of some notable changes these weapons have from their origin
 		* The P228 cartridge, .357 SIG, is replicated in HL2 and deals half the damage output of HL2's .357 Magnum.
 	* Some weapons still have variable damage different from their ammo types to try to mimic CS:S. (e.g. Dual Berettas are more powerful and Silenced USPs are weaker)
 * All weapon classnames have "_css" in the middle of them. (e.g. `weapon_css_glock`)
+* Worldmodels bonemerge with their owners by using `ValveBiped.Bip01_R_Hand` instead of `ValveBiped.weapon_bone`, allowing them to be used on HL2 NPCs (and HL2-based playermodels)
 
 ---
 
 ### Done:
 
-* Code and scripting for Pistols, SMGs, Rifles, and M249
-* Viewmodel tweaks for Pistols, SMGs, Rifles, and M249
+* Code and scripting for Pistols, Shotguns, SMGs, Rifles, and M249
+* Viewmodel tweaks for Pistols, Shotguns, SMGs, Rifles, and M249
+* HL2-compatible worldmodels for Pistols
 * Ammo types and damage tuning for Pistols, SMGs, and Rifles
+* Spread and viewpunch adjustments for each weapon
 * Basic "HEV suit" hand retexture
 * Adjustments for base HL2 weapons
 * Ammo box items for .556 NATO and .762 NATO
 
 ### Todo:
 
-* Code and scripting for Sniper Rifles, Shotguns
+* Code and scripting for Sniper Rifles
 	* Possibly adding the Knife as well?
-* Viewmodel tweaks for Sniper Rifles, Shotguns
-* Spread adjustments for each weapon
-* HL2-compatible worldmodels *(i.e. bonemerging with `ValveBiped.Bip01_R_Hand`, having an attack sequence appropriate to a NPC activity, and dispatching the muzzle flash event)*
+* Scopes for SG552 and AUG
+* Viewmodel tweaks for Sniper Rifles
+* HL2-compatible worldmodels for Shotguns, SMGs, Rifles, etc.
+* Unique NPC reload and shoot sounds
 * Ammo box items for .45 ACP and .357 SIG
-	* Possible custom ammo crates for them as well?
+	* Possible custom ammo crates as well?
 * Actual HEV suit arms on the CS:S viewmodel rig instead of retexturing the CS:S arms *(would share the original HL2 hand sheet)*
 
 ---
@@ -77,6 +81,7 @@ These weapons have been designed to be portable to MP (i.e. they are fully predi
 
 * Crowbar 0.71 - Crowbar was used to initially decompile all of the models involved.
 * Counter-Strike: Source - All decompiled models, the original hand texture sheet, and a few of the scripts originate from Counter-Strike: Source.
+* Blender and Blender Source Tools - Used to adjust the bones on the CS:S worldmodels to target HL2 skeletons.
 * Blixibon - Everything else, including porting the weapons themselves and modifying them to work in a Source SDK 2013/Half-Life 2 environment.
 
 ---
