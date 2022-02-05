@@ -1,0 +1,10 @@
+
+$sequence "idle" "idle.smd" activity "ACT_VM_IDLE" 1
+
+$sequence "attack1" {
+	"idle.smd" numframes 3
+	activity "ACT_RANGE_ATTACK_PISTOL" 1
+	{ event 3014 1 "" }
+	{ event AE_NPC_MUZZLEFLASH 0 "PISTOL MUZZLE" }
+	{ event 6001 0 "0" }
+}

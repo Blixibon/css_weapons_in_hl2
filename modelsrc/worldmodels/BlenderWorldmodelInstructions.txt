@@ -1,0 +1,11 @@
+CS:S worldmodel to HL2 worldmodel in Blender using Blender Source Tools
+
+1. Import the equivalent HL2 weapon worldmodel
+2. Import the CS:S weapon worldmodel as a new armature
+3. Import the CS:S weapon worldmodel collision mesh targeting the CS:S weapon worldmodel armature
+3. Move the HL2 weapon worldmodel (and its armature) to be as closely aligned with the CS:S weapon as possible (triggers in same approximate locations, etc.)
+4. Separate "ValveBiped.Bip01_R_Hand" from the HL2 armature
+5. Join the separated bone with the CS:S armature
+6. Go into the 'Animation' workspace and create a blank "idle" sequence for the CS:S armature w/ the new bone
+7. Export the animation
+8. Export the CS:S weapon worldmodel and the collision mesh
