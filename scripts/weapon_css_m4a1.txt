@@ -16,7 +16,7 @@ WeaponData
 	"primary_ammo"		"556nato"
 	"secondary_ammo"	"None"
 
-	"weight"		"2"
+	"weight"		"4"
 	"rumble"		"1"
 	"item_flags"		"0"
 	

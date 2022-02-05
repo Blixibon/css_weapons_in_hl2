@@ -16,7 +16,7 @@ WeaponData
 	"primary_ammo"		"45ACP"
 	"secondary_ammo"	"None"
 
-	"weight"		"2"
+	"weight"		"3"
 	"rumble"		"1"
 	"item_flags"		"0"
 	

@@ -50,6 +50,26 @@
 	"wave"			")weapons/glock/glock18-1.wav"
 }
 
+"Weapon_Glock.NPC_Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"ATTN_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			")weapons/glock/glock18-1.wav" // TODO
+}
+
+"Weapon_Glock.NPC_Reload"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"ATTN_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/glock/glock_clipin.wav" // TODO
+}
+
 "Weapon_Glock.Clipout"
 {
 	"channel"		"CHAN_ITEM"
@@ -391,6 +411,26 @@
 	"wave"			")weapons/p228/p228-1.wav"
 }
 
+"Weapon_P228.NPC_Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"ATTN_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			")weapons/p228/p228-1.wav" // TODO
+}
+
+"Weapon_P228.NPC_Reload"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"ATTN_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/p228/p228_clipin.wav" // TODO
+}
+
 "Weapon_P228.Clipout"
 {
 	"channel"		"CHAN_ITEM"
@@ -627,6 +667,26 @@
 	"wave"			")weapons/fiveseven/fiveseven-1.wav"
 }
 
+"Weapon_FiveSeven.NPC_Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"ATTN_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			")weapons/fiveseven/fiveseven-1.wav" // TODO
+}
+
+"Weapon_FiveSeven.NPC_Reload"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"ATTN_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/fiveseven/fiveseven_clipin.wav" // TODO
+}
+
 "Weapon_FiveSeven.Clipout"
 {
 	"channel"		"CHAN_ITEM"
@@ -727,6 +787,26 @@
 	"pitch"		"PITCH_NORM"
 
 	"wave"			")weapons/usp/usp_unsil-1.wav"
+}
+
+"Weapon_USP.NPC_Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"ATTN_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			")weapons/usp/usp_unsil-1.wav" // TODO
+}
+
+"Weapon_USP.NPC_Reload"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"ATTN_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/usp/usp_clipin.wav" // TODO
 }
 
 "Weapon_USP.SilencedShot"
@@ -1205,6 +1285,26 @@
 
 	"wave"			")weapons/DEagle/deagle-1.wav"
 	
+}
+
+"Weapon_DEagle.NPC_Single"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"ATTN_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			")weapons/DEagle/deagle-1.wav" // TODO
+}
+
+"Weapon_DEagle.NPC_Reload"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"CompatibilityAttenuation"	"ATTN_NORM"
+	"pitch"		"PITCH_NORM"
+
+	"wave"			"weapons/DEagle/de_clipin.wav" // TODO
 }
 
 "Weapon_DEagle.Clipout"

@@ -16,7 +16,7 @@ WeaponData
 	"primary_ammo"		"357"
 	"secondary_ammo"	"None"
 
-	"weight"		"5"
+	"weight"		"6"
 	"rumble"		"1"
 	"item_flags"		"0"
 	

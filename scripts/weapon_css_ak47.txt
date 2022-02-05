@@ -16,7 +16,7 @@ WeaponData
 	"primary_ammo"		"762nato"
 	"secondary_ammo"	"None"
 
-	"weight"		"2"
+	"weight"		"5"
 	"rumble"		"1"
 	"item_flags"		"0"
 	
