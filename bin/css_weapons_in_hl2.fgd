@@ -1,0 +1,89 @@
+//=============================================================================
+//
+// Purpose: FGD for CS:S weapons in Half-Life 2
+// 
+// @include this in your main FGD or mount it as an additional FGD in Hammer
+// 
+//=============================================================================
+
+@BaseClass color(0 0 200) base(Weapon) sphere(fademindist) sphere(fademaxdist) = CSSWeapon
+[
+]
+
+@BaseClass = CSSWeaponSilencable
+[
+	CanToggleSilencer(choices) : "Player can toggle silencer" : 1 : "Whether or not the player can manually attach/detach the silencer on this weapon." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	
+	Silenced(choices) : "Start with silencer" : 0 : "Whether or not this weapon should spawn with the silencer attached." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
+	input SetSilencer(bool) : "Instantly sets whether or not the weapon has its silencer attached."
+	input ToggleSilencer(void) : "Instantly toggles the weapon's silencer attachment."
+]
+
+@BaseClass = CSSWeaponBurstable
+[
+	CanUseBurstMode(choices) : "Player can toggle burst mode" : 1 : "Whether or not the player can manually toggle the burst mode on this weapon." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+	
+	InBurstMode(choices) : "Start in burst mode" : 0 : "Whether or not this weapon should spawn already in burst mode." =
+	[
+		0 : "No"
+		1 : "Yes"
+	]
+
+	input SetBurstMode(bool) : "Instantly sets whether or not the weapon is in burst mode."
+	input ToggleBurstMode(void) : "Instantly toggles the weapon's burst mode."
+]
+
+//-------------------------------------------------------------------------
+// Weapons
+//-------------------------------------------------------------------------
+
+@PointClass base(CSSWeapon,CSSWeaponBurstable) studio("models/weapons/w_pist_glock18.mdl") = weapon_css_glock : "CS:S Glock-18" []
+@PointClass base(CSSWeapon,CSSWeaponSilencable) studio("models/weapons/w_pist_usp.mdl") = weapon_css_usp : "CS:S USP-45" []
+@PointClass base(CSSWeapon)	studio("models/weapons/w_pist_p228.mdl") = weapon_css_p228 : "CS:S P228" []
+@PointClass base(CSSWeapon)	studio("models/weapons/w_pist_deagle.mdl") = weapon_css_deagle : "CS:S Desert Eagle" []
+@PointClass base(CSSWeapon)	studio("models/weapons/w_pist_fiveseven.mdl") = weapon_css_fiveseven : "CS:S Five-SeveN" []
+@PointClass base(CSSWeapon)	studio("models/weapons/w_pist_elite.mdl") = weapon_css_elite : "CS:S Dual Berettas" []
+
+@PointClass base(CSSWeapon) studio("models/weapons/w_shot_m3super90.mdl") = weapon_css_m3 : "CS:S M3" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_shot_xm1014.mdl") = weapon_css_xm1014 : "CS:S XM1014" []
+
+@PointClass base(CSSWeapon) studio("models/weapons/w_smg_tmp.mdl") = weapon_css_tmp : "CS:S TMP" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_smg_mac10.mdl") = weapon_css_mac10 : "CS:S MAC-10" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_smg_mp5.mdl") = weapon_css_mp5 : "CS:S MP5" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_smg_ump45.mdl") = weapon_css_ump45 : "CS:S UMP-45" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_smg_p90.mdl") = weapon_css_p90 : "CS:S P90" []
+
+@PointClass base(CSSWeapon) studio("models/weapons/w_rif_galil.mdl") = weapon_css_galil : "CS:S Galil" []
+@PointClass base(CSSWeapon,CSSWeaponBurstable) studio("models/weapons/w_rif_famas.mdl") = weapon_css_famas : "CS:S FAMAS" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_rif_ak47.mdl") = weapon_css_ak47 : "CS:S AK-47" []
+@PointClass base(CSSWeapon,CSSWeaponSilencable) studio("models/weapons/w_rif_m4a1.mdl") = weapon_css_m4a1 : "CS:S M4A1" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_rif_aug.mdl") = weapon_css_aug : "CS:S AUG" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_rif_sg552.mdl") = weapon_css_sg552 : "CS:S SG552" []
+
+@PointClass base(CSSWeapon) studio("models/weapons/w_rif_m249.mdl") = weapon_css_m249 : "CS:S M249" []
+
+//-------------------------------------------------------------------------
+// Items
+//-------------------------------------------------------------------------
+
+@PointClass base(Item) studio("models/items/45acp_box.mdl")= item_ammo_45acp : "Box of .45 ACP ammo" []
+@PointClass base(Item) studio("models/items/45acp_box.mdl")= item_ammo_45acp_large : "Large Box of .45 ACP ammo" []
+@PointClass base(Item) studio("models/items/357sig_box.mdl")= item_ammo_357sig : "Box of 357 SIG ammo" []
+@PointClass base(Item) studio("models/items/357sig_box.mdl")= item_ammo_357sig_large : "Large Box of 357 SIG ammo" []
+@PointClass base(Item) studio("models/items/556nato_box.mdl")= item_ammo_556nato : "Box of 5.56 NATO ammo" []
+@PointClass base(Item) studio("models/items/556nato_box.mdl")= item_ammo_556nato_large : "Large Box of 5.56 NATO ammo" []
+@PointClass base(Item) studio("models/items/762nato_box.mdl")= item_ammo_762nato : "Box of 7.62 NATO ammo" []
+@PointClass base(Item) studio("models/items/762nato_box.mdl")= item_ammo_762nato_large : "Large Box of 7.62 NATO ammo" []
