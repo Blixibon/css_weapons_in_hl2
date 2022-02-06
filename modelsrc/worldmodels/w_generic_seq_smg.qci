@@ -1,0 +1,34 @@
+
+$sequence "idle" "idle.smd" activity "ACT_VM_IDLE" 1
+
+$sequence "attack1" {
+	"idle.smd" numframes 3
+	activity "ACT_RANGE_ATTACK_SMG1" 1
+	{ event AE_NPC_MUZZLEFLASH 0 "SMG1 MUZZLE" }
+	{ event 3002 0 "" }
+	{ event 6001 0 "0" }
+}
+
+$sequence "attack1a" {
+	"idle.smd" numframes 3
+	activity "ACT_RANGE_ATTACK_AR2" 1
+	{ event AE_NPC_MUZZLEFLASH 0 "SMG1 MUZZLE" }
+	{ event 3002 0 "" }
+	{ event 6001 0 "0" }
+}
+
+$sequence "attack2" {
+	"idle.smd" numframes 3
+	activity "ACT_RANGE_ATTACK_SMG2" 1
+	{ event AE_NPC_MUZZLEFLASH 0 "SMG1 MUZZLE" }
+	{ event 3002 0 "" }
+	{ event 6001 0 "0" }
+}
+
+$sequence "attack2a" {
+	"idle.smd" numframes 3
+	activity "ACT_RANGE_ATTACK_AR1" 1
+	{ event AE_NPC_MUZZLEFLASH 0 "SMG1 MUZZLE" }
+	{ event 3002 0 "" }
+	{ event 6001 0 "0" }
+}

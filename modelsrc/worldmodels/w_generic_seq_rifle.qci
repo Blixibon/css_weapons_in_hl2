@@ -1,0 +1,3 @@
+
+// For now, just use the SMG QCI
+$include "..\w_generic_seq_smg.qci"

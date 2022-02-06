@@ -17,23 +17,18 @@ $illumposition 0.849 -10.166 2.943
 $cdmaterials "models\weapons\w_models\w_mach_m249\"
 
 $attachment "muzzle_flash" "ValveBiped.flash" 0 0 0 rotate -90 0 0
+$attachment "1" "ValveBiped.weapon_bone" 1.06 0.18 0.72 rotate 8.79 89.53 -85.45 // Shell eject
+$attachment "muzzle" "ValveBiped.flash" 0 0 0 rotate -90 0 0 // HL2 uses this name
 
 $cbox 0 0 0 0 0 0
 
 $bbox -8.487 -2.935 -3.858 28.805 4.688 9.744
 
-$definebone "ValveBiped" "" 0 0 0 0 0 89.999982 0 0 0 0 0 0
-$definebone "ValveBiped.weapon_bone" "ValveBiped" 1.420404 4.371634 0.692094 0 0 -2.746645 0 0 0 0 0 0
-$definebone "ValveBiped.weapon_bone_Clip" "ValveBiped.weapon_bone" -0.305385 -4.371634 5.839864 0 0 0 0 0 0 0 0 0
-$definebone "ValveBiped.flash" "ValveBiped.weapon_bone" -1.230863 0.057261 27.746819 -0.185123 1.564347 2.166411 0 0 0 0 0 0
+$pushd "w_mach_m249para_anims"
 
+$include "..\w_generic_seq_rifle.qci"
 
-$sequence "idle" {
-	"w_mach_m249para_anims\idle.smd"
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
+$popd
 
 $collisionmodel "w_mach_m249para_physics.smd"
 {

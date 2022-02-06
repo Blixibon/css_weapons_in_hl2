@@ -17,22 +17,18 @@ $illumposition -0.097 -8.559 1.694
 $cdmaterials "models\weapons\w_models\w_shot_m3super90\"
 
 $attachment "muzzle_flash" "ValveBiped.flash" 0 0 0 rotate -90 0 0
+$attachment "1" "ValveBiped.weapon_bone" 1.06 0.18 0.72 rotate 8.79 89.53 -85.45 // Shell eject
+$attachment "muzzle" "ValveBiped.flash" 0 0 0 rotate -90 0 0 // HL2 uses this name
 
 $cbox 0 0 0 0 0 0
 
 $bbox -10.897 -1.553 -3.312 28.017 1.367 6.699
 
-$definebone "ValveBiped" "" 0 0 0 0 0 89.999982 0 0 0 0 0 0
-$definebone "ValveBiped.weapon_bone" "ValveBiped" 0.978385 4.371634 4.328808 0 0 0 0 0 0 0 0 0
-$definebone "ValveBiped.flash" "ValveBiped.weapon_bone" -0.888834 0.574198 23.434811 0 0 0 0 0 0 0 0 0
+$pushd "w_shot_m3super90_anims"
 
+$include "..\w_generic_seq_shotgun.qci"
 
-$sequence "idle" {
-	"w_shot_m3super90_anims\idle.smd"
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
+$popd
 
 $collisionmodel "w_shot_m3super90_physics.smd"
 {

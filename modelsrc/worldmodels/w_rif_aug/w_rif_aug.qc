@@ -17,23 +17,18 @@ $illumposition 0.833 -12.83 3.23
 $cdmaterials "models\weapons\w_models\w_rif_aug\"
 
 $attachment "muzzle_flash" "ValveBiped.flash" 0 0 0 rotate -90 0 0
+$attachment "1" "ValveBiped.weapon_bone" 1.06 0.18 0.72 rotate 8.79 89.53 -85.45 // Shell eject
+$attachment "muzzle" "ValveBiped.flash" 0 0 0 rotate -90 0 0 // HL2 uses this name
 
 $cbox 0 0 0 0 0 0
 
 $bbox -4.75 -0.767 -2.878 30.41 2.308 9.338
 
-$definebone "ValveBiped" "" 0 0 0 0 0 89.999982 0 0 0 0 0 0
-$definebone "ValveBiped.weapon_bone" "ValveBiped" 0.437203 5.568959 12.277983 0 0 0 0 0 0 0 0 0
-$definebone "ValveBiped.weapon_bone_Clip" "ValveBiped.weapon_bone" -0.305385 -4.371634 -7.399602 0 0 0 0 0 0 0 0 0
-$definebone "ValveBiped.flash" "ValveBiped.weapon_bone" -0.074414 -0.001451 17.496016 0 0 0 0 0 0 0 0 0
+$pushd "w_rif_aug_anims"
 
+$include "..\w_generic_seq_rifle.qci"
 
-$sequence "idle" {
-	"w_rif_aug_anims\idle.smd"
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
+$popd
 
 $collisionmodel "w_rif_aug_physics.smd"
 {

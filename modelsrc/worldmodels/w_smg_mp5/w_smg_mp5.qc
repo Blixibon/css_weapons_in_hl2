@@ -17,23 +17,18 @@ $illumposition 0.277 -8.749 1.616
 $cdmaterials "models\weapons\w_models\w_smg_mp5\"
 
 $attachment "muzzle_flash" "ValveBiped.Flash" 0 0 0 rotate -90 0 0
+$attachment "1" "ValveBiped.weapon_bone" 1.06 0.18 0.72 rotate 8.79 89.53 -85.45 // Shell eject
+$attachment "muzzle" "ValveBiped.flash" 0 0 0 rotate -90 0 0 // HL2 uses this name
 
 $cbox 0 0 0 0 0 0
 
 $bbox -8.179 -1.262 -5.094 25.427 1.815 8.325
 
-$definebone "ValveBiped" "" 0 0 0 0 0 89.999982 0 0 0 0 0 0
-$definebone "ValveBiped.weapon_bone" "ValveBiped" 0.585547 4.371634 8.27127 0 0 0 0 0 0 0 0 0
-$definebone "ValveBiped.weapon_bone_Clip" "ValveBiped.weapon_bone" -0.310123 -4.371033 5.233142 0 0 0 0 0 0 0 0 0
-$definebone "ValveBiped.Flash" "ValveBiped.weapon_bone" -0.264453 0.966145 17.15546 -0.406743 1.267039 -0.162605 0 0 0 0 0 0
+$pushd "w_smg_mp5_anims"
 
+$include "..\w_generic_seq_smg.qci"
 
-$sequence "idle" {
-	"w_smg_mp5_anims\idle.smd"
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
+$popd
 
 $collisionmodel "w_smg_mp5_physics.smd"
 {

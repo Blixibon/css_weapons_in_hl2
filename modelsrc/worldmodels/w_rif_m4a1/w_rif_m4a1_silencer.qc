@@ -19,26 +19,18 @@ $cdmaterials "models\weapons\w_models\w_rif_m4a1\"
 $attachment "muzzle_flash" "ValveBiped.flash" 0 0 0 rotate -90 0 0
 $attachment "muzzle_flash_silencer" "ValveBiped.flash_silencer" 0 0 0 rotate -90 0 0
 $attachment "L_Hand_Attach" "ValveBiped.L_hand_attach" 0 0 0 rotate 0 0 0
+$attachment "1" "ValveBiped.weapon_bone" 1.06 0.18 0.72 rotate 8.79 89.53 -85.45 // Shell eject
+$attachment "muzzle" "ValveBiped.flash" 0 0 0 rotate -90 0 0 // HL2 uses this name
 
 $cbox 0 0 0 0 0 0
 
 $bbox -8.773 -1.248 -4.683 32.471 2.928 8.048
 
-$definebone "ValveBiped" "" 0 0 0 0 0 89.999982 0 0 0 0 0 0
-$definebone "ValveBiped.weapon_bone" "ValveBiped" 0.579547 4.389833 5.825668 0 0 0 0 0 0 0 0 0
-$definebone "ValveBiped.weapon_bone_Clip" "ValveBiped.weapon_bone" 0.033044 -4.566531 3.146277 0 0 0 0 0 0 0 0 0
-$definebone "ValveBiped.L_hand_attach" "ValveBiped.weapon_bone" 2.348599 -3.124231 6.258059 -26.250748 167.839905 20.903333 0 0 0 0 0 0
-$definebone "ValveBiped.Silencer" "ValveBiped.weapon_bone" 0.033044 0.035387 22.329149 0 0 0 0 0 0 0 0 0
-$definebone "ValveBiped.flash" "ValveBiped.weapon_bone" 0.023412 0.047086 23.359142 0 0 0 0 0 0 0 0 0
-$definebone "ValveBiped.flash_silencer" "ValveBiped.weapon_bone" 0.023412 0.047086 26.645269 0 0 0 0 0 0 0 0 0
+$pushd "w_rif_m4a1_anims"
 
+$include "..\w_generic_seq_rifle.qci"
 
-$sequence "idle" {
-	"w_rif_m4a1_silencer_anims\idle.smd"
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
+$popd
 
 $collisionmodel "w_rif_m4a1_silencer_physics.smd"
 {

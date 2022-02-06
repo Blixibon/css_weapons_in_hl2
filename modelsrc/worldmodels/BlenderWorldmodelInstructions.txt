@@ -9,3 +9,7 @@ CS:S worldmodel to HL2 worldmodel in Blender using Blender Source Tools
 6. Go into the 'Animation' workspace and create a blank "idle" sequence for the CS:S armature w/ the new bone
 7. Export the animation
 8. Export the CS:S weapon worldmodel and the collision mesh
+
+
+
+NOTE: Most HL2 viewmodels require the ValveBiped.Bip01_R_Hand bone roll to be tweaked post-translation to the appropriate alignment.
