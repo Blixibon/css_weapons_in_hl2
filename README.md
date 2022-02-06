@@ -34,12 +34,14 @@ Here's a small list of some notable changes these weapons have from their origin
 
 * Code and scripting for Pistols, Shotguns, SMGs, Rifles, and M249
 * Viewmodel tweaks for Pistols, Shotguns, SMGs, Rifles, and M249
-* HL2-compatible worldmodels for Pistols
+* HL2-compatible worldmodels for Pistols, Shotguns, SMGs, Rifles, and M249
+* Unique NPC reload and shoot sounds for Pistols, Shotguns, SMGs, Rifles, and M249
 * Ammo types and damage tuning for Pistols, SMGs, and Rifles
 * Spread and viewpunch adjustments for each weapon
 * Basic "HEV suit" hand retexture
 * Adjustments for base HL2 weapons
 * Ammo box items for .556 NATO and .762 NATO
+* FGD for all new weapon and item entities
 
 ### Todo:
 
@@ -47,11 +49,12 @@ Here's a small list of some notable changes these weapons have from their origin
 	* Possibly adding the Knife as well?
 * Scopes for SG552 and AUG
 * Viewmodel tweaks for Sniper Rifles
-* HL2-compatible worldmodels for Shotguns, SMGs, Rifles, etc.
-* Unique NPC reload and shoot sounds
+* HL2-compatible worldmodels for Sniper Rifles
+* Unique NPC reload and shoot sounds for Sniper Rifles
 * Ammo box items for .45 ACP and .357 SIG
 	* Possible custom ammo crates as well?
 * Actual HEV suit arms on the CS:S viewmodel rig instead of retexturing the CS:S arms *(would share the original HL2 hand sheet)*
+* Dual Berettas for NPCs?
 
 ---
 
