@@ -1,0 +1,11 @@
+
+// For now, just use the SMG QCI
+$include "..\w_generic_seq_smg.qci"
+
+$sequence "attack3" {
+	"idle.smd" numframes 3
+	activity "ACT_RANGE_ATTACK_SNIPER_RIFLE" 1
+	{ event AE_NPC_MUZZLEFLASH 0 "SMG1 MUZZLE" }
+	{ event 3002 0 "" }
+	{ event 6001 0 "0" }
+}
