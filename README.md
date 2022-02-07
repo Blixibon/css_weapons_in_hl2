@@ -32,10 +32,10 @@ Here's a small list of some notable changes these weapons have from their origin
 
 ### Done:
 
-* Code and scripting for Pistols, Shotguns, SMGs, Rifles, and M249
-* Viewmodel tweaks for Pistols, Shotguns, SMGs, Rifles, and M249
-* HL2-compatible worldmodels for Pistols, Shotguns, SMGs, Rifles, and M249
-* Unique NPC reload and shoot sounds for Pistols, Shotguns, SMGs, Rifles, and M249
+* Code and scripting for Pistols, Shotguns, SMGs, Rifles, Sniper Rifles, and M249
+* Viewmodel tweaks for Pistols, Shotguns, SMGs, Rifles, Sniper Rifles, and M249
+* HL2-compatible worldmodels for Pistols, Shotguns, SMGs, Rifles, Sniper Rifles, and M249
+* Unique NPC reload and shoot sounds for Pistols, Shotguns, SMGs, Rifles, Sniper Rifles, and M249
 * Ammo types and damage tuning for Pistols, SMGs, and Rifles
 * Spread and viewpunch adjustments for each weapon
 * Basic "HEV suit" hand retexture
@@ -45,20 +45,35 @@ Here's a small list of some notable changes these weapons have from their origin
 
 ### Todo:
 
-* Code and scripting for Sniper Rifles
-	* Possibly adding the Knife as well?
-* Scopes for SG552 and AUG
-* Viewmodel tweaks for Sniper Rifles
-* HL2-compatible worldmodels for Sniper Rifles
-* Unique NPC reload and shoot sounds for Sniper Rifles
 * Ammo box items for .45 ACP and .357 SIG
 	* Possible custom ammo crates as well?
+* Demo map demonstrating each CS:S weapon and their usage on NPCs
+
+#### Things which would be nice but are not currently planned:
+
 * Actual HEV suit arms on the CS:S viewmodel rig instead of retexturing the CS:S arms *(would share the original HL2 hand sheet)*
-* Dual Berettas for NPCs?
+	* Putting the CS:S viewmodels on `ValveBiped.Bip01` would be more preferable since it would allow any standard arm models to be used, but that would require reanimating all of them
+* Scope overlays for sniper rifles
+* Knife and Grenades
+* Dual Berettas for NPCs
 
 ---
 
-## Required Assets
+## Code
+
+The code for this feature is located [on a branch of my Source SDK 2013 fork](https://github.com/Blixibon/source-sdk-2013/tree/misc/css-weapons-in-hl2). You can merge this into your own mod using Git.
+
+Note that this code utilizes features from Mapbase, but those features have been bundled with this branch so that it could work in any Source SDK 2013 fork. In the event of a merge conflict, Mapbase's code should take precedence.
+
+These weapons have been designed to be portable to MP (i.e. they are fully predicted), but this has not yet been tested.
+
+---
+
+## Setup Instructions
+
+This section will explain how to set up these weapons for a Source SDK 2013 mod.
+
+### Required Assets
 
 This requires the following stock Counter-Strike: Source assets which are not included in this repository:
 
@@ -70,13 +85,37 @@ This requires the following stock Counter-Strike: Source assets which are not in
 
 ---
 
-## Code
+### Step 1: Merge the code
 
-The code for this feature is located [on a branch of my Source SDK 2013 fork](https://github.com/Blixibon/source-sdk-2013/tree/misc/css-weapons-in-hl2). You can merge this into your own mod using Git.
+The code component of this branch (see above) has shared history with Source 2013's GitHub repo. If your mod's code is using Git and derives from this repo as well, you can merge it into your own mod without any hassle.
 
-Note that this code utilizes features from Mapbase, but those features have been bundled with this branch so that it could work in any Source SDK 2013 fork. In the event of a merge conflict, Mapbase's code should take precedence.
+If you are not using Git, please learn how to use it and come back to this step later.
 
-These weapons have been designed to be portable to MP (i.e. they are fully predicted), but this has not yet been tested.
+### Step 2: Download the release
+
+Go to "Releases" and download the latest release. This includes the compiled models, some materials, and the NPC sounds.
+
+Put these assets into your mod alongside the aforementioned CS:S assets.
+
+### Step 3: Download the repository
+
+#### Step 3.1: Add the scripts
+
+Copy and paste all scripts in the `scripts` folder into your mod's own `scripts` folder. Modify `game_sounds_manifest.txt` to include `game_sounds_weapons_css.txt` as well.
+
+#### Step 3.2: Add the resources
+
+Your mod should have two files in its `resource` folder: `ClientScheme.res` and `%modname%_english.txt`. If you do not have `ClientScheme.res`, copy and paste it from HL2's or EP2's resources into your own mod's files.
+
+Now, in the `resourcesrc` folder of this repository, there are two files: `ClientScheme.res` and `localization_english.txt`. This repository's `ClientScheme.res` contains fonts you should put into your mod's own `ClientScheme.res`. The `localization_english.txt` contains weapon labels you should put into your mod's own `%modname%_english.txt`.
+
+### Step 4: Add the FGD
+
+This repository has a `bin` folder with a FGD you can use in Hammer to spawn CS:S weapons and ammo items. Use it via either the `@include` command in your FGD or mount it in your Hammer config.
+
+### Conclusion
+
+That should be everything.
 
 ---
 
