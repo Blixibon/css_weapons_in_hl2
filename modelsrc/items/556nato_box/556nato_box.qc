@@ -1,6 +1,6 @@
 // Created by Crowbar 0.71
 
-$modelname "items\556nato_box.mdl"
+$modelname "items\556mm_box.mdl"
 
 $staticprop
 
