@@ -8,3 +8,11 @@ $sequence "attack1" {
 	{ event 6001 0 "2" }
 	{ event 3004 0 "" }
 }
+
+$sequence "attack1a" {
+	"idle.smd" numframes 3
+	activity "ACT_RANGE_ATTACK_AR2" 1
+	{ event AE_NPC_MUZZLEFLASH 0 "SHOTGUN MUZZLE" }
+	{ event 6001 0 "2" }
+	{ event 3004 0 "" }
+}
