@@ -1,0 +1,75 @@
+// G3SG1
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"	"#HL2_CSS_G3SG1"
+	"viewmodel"			"models/weapons/v_snip_g3sg1.mdl"
+	"playermodel"		"models/weapons/w_snip_g3sg1.mdl"
+	"anim_prefix"		"anim"
+	"bucket"			"3"
+	"bucket_position"	"1"
+	"bucket_360"			"0"
+	"bucket_position_360"	"0"
+
+	"clip_size"			"20"
+	"primary_ammo"		"762mm"
+	"secondary_ammo"	"None"
+
+	"weight"		"6"
+	"rumble"		"1"
+	"item_flags"		"0"
+	
+	"BuiltRightHanded"	"0"
+	"AllowFlipping"		"1"
+	"viewmodel_fov"		"60"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"reload_npc"	"Weapon_G3SG1.NPC_Reload"
+		"empty"			"Default.ClipEmpty_Pistol"
+		"single_shot"	"Weapon_G3SG1.Single"
+		"single_shot_npc"	"Weapon_G3SG1.NPC_Single"
+		
+		"special3"			"Default.Zoom"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"CSS_WeaponIcons"
+				"character"	"i"
+		}
+		"weapon_s"
+		{	
+				"font"		"CSS_WeaponIconsSelected"
+				"character"	"i"
+		}
+		"weapon_small"
+		{
+				"font"		"CSS_WeaponIconsSmall"
+				"character"	"i"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIconsSmall"
+				"character"	"r"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+	}
+}
