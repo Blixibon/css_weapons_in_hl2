@@ -1,0 +1,114 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "8157"
+	"mapversion" "11"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "4"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "11"
+	"classname" "worldspawn"
+	"skyname" "sky_day01_01"
+	"chaptertitlenomessage" "1"
+	"maxpropscreenwidth" "-1"
+	"detailvbsp" "detail.vbsp"
+	"detailmaterial" "detail/detailsprites"
+	"vscriptlanguage_client" "-2"
+}
+entity
+{
+	"id" "2"
+	"classname" "vgui_text_display"
+	"alignment" "7"
+	"angles" "0 180 0"
+	"font" "Trebuchet24"
+	"message" "$label"
+	"renderamt" "255"
+	"rendercolor" "255 255 255"
+	"resolution" "100"
+	"targetname" "label"
+	"textsize" "64"
+	"origin" "28 32 48"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "#HL2_CSS_Demo_Ammo_556mm"
+		"logicalpos" "[0 9000]"
+	}
+}
+entity
+{
+	"id" "40"
+	"classname" "env_entity_maker"
+	"angles" "0 0 0"
+	"EntityTemplate" "template"
+	"PostSpawnDirection" "0 0 0"
+	"PostSpawnDirectionVariance" "0.15"
+	"spawnflags" "7"
+	"targetname" "maker"
+	"origin" "-16 16 24"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "54"
+	"classname" "point_template"
+	"spawnflags" "2"
+	"targetname" "template"
+	"Template01" "$target"
+	"origin" "-16 16 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
+entity
+{
+	"id" "70"
+	"classname" "func_instance_parms"
+	"parm1" "$label string"
+	"parm2" "$target target_destination"
+	"origin" "0 16 8"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+cameras
+{
+	"activecamera" "-1"
+}
+cordon
+{
+	"mins" "(-1024 -1024 -1024)"
+	"maxs" "(1024 1024 1024)"
+	"active" "0"
+}
