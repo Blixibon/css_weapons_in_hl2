@@ -26,7 +26,7 @@ $cdmaterials "models\weapons\v_hand\" //"models\weapons\v_models\hands\"
 
 $attachment "1" "v_weapon.sg550_Parent" 0.3 3.5 31 rotate 0 0 0
 $attachment "2" "v_weapon.sg550_Parent" -0.2 4.1 4.1 rotate 0 180 0
-$attachment "muzzle" "v_weapon.sg550_Parent" 0.00 4.50 26.75 rotate -90 0 0
+$attachment "muzzle" "v_weapon.sg550_Parent" 0.00 4.55 39.00 rotate -90 0 0
 
 $cbox 0 0 0 0 0 0
 
