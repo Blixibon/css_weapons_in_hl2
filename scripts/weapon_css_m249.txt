@@ -13,7 +13,7 @@ WeaponData
 	"bucket_position_360"	"0"
 
 	"clip_size"			"100"
-	"primary_ammo"		"762nato"
+	"primary_ammo"		"762mm"
 	"secondary_ammo"	"None"
 
 	"weight"		"6"
