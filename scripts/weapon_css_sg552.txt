@@ -31,6 +31,8 @@ WeaponData
 		"empty"			"Default.ClipEmpty_Rifle"
 		"single_shot"	"Weapon_SG552.Single"
 		"single_shot_npc"	"Weapon_SG552.NPC_Single"
+		
+		"special3"			"Default.Zoom"
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.
