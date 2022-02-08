@@ -20,7 +20,7 @@ Here's a small list of some notable changes these weapons have from their origin
 * Most weapons' cartridges have been adapted to HL2's ammo types, although a few new CS:S-inspired ammo types have also been added which use values in-line with Half-Life 2's other ammo types.
 	* **Adaptation examples:**
 		* The Five-SeveN and P90 use 9mm instead of 5.7×28mm.
-		* The Deagle uses .357 Magnum ammo instead of .50AE. *(This is partially inspired by Half-Life: Opposing Force.)*
+		* The Deagle uses .357 Magnum ammo instead of .50AE.
 	* **Ammo type port examples:**
 		* The main rifle cartridge, 5.56 NATO, is replicated in HL2 and uses a player damage output in between the HL2 Pistol and the HL2 AR2.
 		* The P228 cartridge, .357 SIG, is replicated in HL2 and deals half the damage output of HL2's .357 Magnum.
@@ -40,14 +40,15 @@ Here's a small list of some notable changes these weapons have from their origin
 * Spread and viewpunch adjustments for each weapon
 * Basic "HEV suit" hand retexture
 * Adjustments for base HL2 weapons
-* Ammo box items for .556 NATO and .762 NATO
+* Ammo box items for .556 NATO, .762 NATO, .45 ACP, and .357 SIG
 * FGD for all new weapon and item entities
+* Demo map demonstrating each CS:S weapon and their usage on NPCs (requires Mapbase)
 
 ### Todo:
 
-* Ammo box items for .45 ACP and .357 SIG
+* Improve ammo box items
 	* Possible custom ammo crates as well?
-* Demo map demonstrating each CS:S weapon and their usage on NPCs
+* Re-do the NPC sounds
 
 #### Things which would be nice but are not currently planned:
 
@@ -56,6 +57,7 @@ Here's a small list of some notable changes these weapons have from their origin
 * Scope overlays for sniper rifles
 * Knife and Grenades
 * Dual Berettas for NPCs
+* Proper HL2-style font icons for the SG552 and XM1014
 
 ---
 
@@ -81,7 +83,7 @@ This requires the following stock Counter-Strike: Source assets which are not in
 * `materials/models/weapons/v_models` - Materials and textures used by the CS:S weapon viewmodels. *(entire folder)*
 * `sound/weapons` - Sounds used by the CS:S weapons. *(entire folder)*
 * `resource/cs.ttf` - The font containing most of the CS:S weapon icons.
-* `resource/cstrike.ttf` - The font containing some of the other CS:S weapon icons.
+* `resource/cstrike.ttf` - The font containing some of the other CS:S weapon icons. *(namely the the SG552 and XM1014)*
 
 ---
 
@@ -115,7 +117,7 @@ This repository has a `bin` folder with a FGD you can use in Hammer to spawn CS:
 
 ### Conclusion
 
-That should be everything.
+That should be everything. Open issues on this GitHub repo if you have any problems.
 
 ---
 
@@ -128,16 +130,16 @@ That should be everything.
 
 ---
 
-## What could this be used for?
+### What could this be used for?
 
 Since these weapons are fully integrated into Half-Life 2's game rules and weapon code, they can be used to expand the arsenal of players and/or NPCs in Half-Life 2 mods which involve HL2's universe and/or gameplay.
 
 For example, a Half-Life 2 mod may want to tap into elements from before the Seven Hour War and allow players and/or NPCs to use weapons predating the Combine occupation. Counter-Strike: Source's weapons provide a convenient selection of pre-war weapons which can be used in these contexts, especially since all of them could realistically exist within Half-Life 2's universe.
 
-## Can I use this in my own project?
+### Can I use this in my own project?
 
 **YES!** Please feel free to use these files and the code in any way you'd like. These are intended to be free assets and source code anyone can use or modify, requiring nothing more than credit to this project.
 
-## Why did you make this?
+### Why did you make this?
 
 This started when I thought about an AK-47 being used in an otherwise completely ordinary retail Half-Life 2 mod. Maybe it could be used by rebel NPCs, or maybe the player could swap it for the SMG or AR2 (despite the AK-47 not having a secondary attack). It wouldn't have anything special, but I mainly thought about it in relation to how it would realistically "fit" into Half-Life 2's post-Soviet setting as a weapon someone might find locally. I thought about porting CS:S's AK-47 to Half-Life 2, and the mechanical similarities with other weapons led me to the idea of porting every other CS:S weapon as well.
