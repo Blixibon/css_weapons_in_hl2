@@ -223,7 +223,7 @@
 	"channel"		"CHAN_WEAPON"
 	"volume"		"1.0"
 	"soundlevel"	"SNDLVL_GUNFIRE"
-	"pitch"			"95,105"
+	"pitch"			"97,103"
 
 	"wave"			"^weapons/m249/npc_m249_fire1.wav"
 }
@@ -455,7 +455,7 @@
 	"soundlevel"	"SNDLVL_GUNFIRE"
 	"pitch"			"95,105"
 
-	"wave"			"^weapons/tmp/tmp-1.wav"
+	"wave"			"^weapons/tmp/npc_tmp_fire1.wav"
 }
 
 "Weapon_TMP.NPC_Reload"
@@ -645,7 +645,7 @@
 	"channel"		"CHAN_WEAPON"
 	"volume"		"1.0"
 	"soundlevel"	"SNDLVL_GUNFIRE"
-	"pitch"			"95,105"
+	"pitch"			"97,103"
 
 	"wave"			"^weapons/p90/npc_p90_fire1.wav"
 }
@@ -976,7 +976,7 @@
 	"channel"		"CHAN_WEAPON"
 	"volume"		"1.0"
 	"soundlevel"	"SNDLVL_GUNFIRE"
-	"pitch"			"95,105"
+	"pitch"			"97,103"
 
 	"wave"			"^weapons/ump45/npc_ump45_fire1.wav"
 }
