@@ -41,14 +41,13 @@ Here's a small list of some notable changes these weapons have from their origin
 * Basic "HEV suit" hand retexture
 * Adjustments for base HL2 weapons
 * Ammo box items for .556 NATO, .762 NATO, .45 ACP, and .357 SIG
+* Ammo font icons for aforementioned ammo types
 * FGD for all new weapon and item entities
-* Demo map demonstrating each CS:S weapon and their usage on NPCs (requires Mapbase)
+* Demo map demonstrating each CS:S weapon and their usage on NPCs *(requires Mapbase)*
 
 ### Todo:
 
-* Improve ammo box items
-	* Possible custom ammo crates as well?
-* Re-do the NPC sounds
+	* 
 
 #### Things which would be nice but are not currently planned:
 
@@ -57,7 +56,8 @@ Here's a small list of some notable changes these weapons have from their origin
 * Scope overlays for sniper rifles
 * Knife and Grenades
 * Dual Berettas for NPCs
-* Proper HL2-style font icons for the SG552 and XM1014
+* Custom ammo crates
+	* This would likely involve prefabs with custom models instead of code changes
 
 ---
 
@@ -83,7 +83,6 @@ This requires the following stock Counter-Strike: Source assets which are not in
 * `materials/models/weapons/v_models` - Materials and textures used by the CS:S weapon viewmodels. *(entire folder)*
 * `sound/weapons` - Sounds used by the CS:S weapons. *(entire folder)*
 * `resource/cs.ttf` - The font containing most of the CS:S weapon icons.
-* `resource/cstrike.ttf` - The font containing some of the other CS:S weapon icons. *(namely the the SG552 and XM1014)*
 
 ---
 
@@ -126,6 +125,7 @@ That should be everything. Open issues on this GitHub repo if you have any probl
 * Crowbar 0.71 - Crowbar was used to initially decompile all of the models involved.
 * Counter-Strike: Source - All decompiled models, the original hand texture sheet, and a few of the scripts originate from Counter-Strike: Source.
 * Blender and Blender Source Tools - Used to adjust the bones on the CS:S worldmodels to target HL2 skeletons.
+* Birdfont - Used to modify HL2's ammo icons and create `cs_hl2_custom.ttf`.
 * Blixibon - Everything else, including porting the weapons themselves and modifying them to work in a Source SDK 2013/Half-Life 2 environment.
 
 ---
