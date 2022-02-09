@@ -26,6 +26,8 @@ Here's a small list of some notable changes these weapons have from their origin
 * All weapon classnames have "_css" in the middle of them. (e.g. `weapon_css_glock`)
 * Worldmodels bonemerge with their owners by using `ValveBiped.Bip01_R_Hand` instead of `ValveBiped.weapon_bone`, allowing them to be used on HL2 NPCs (and HL2-based playermodels)
 
+There is a demo map which demonstrates each weapon and shows how they can be equipped on NPCs.
+
 ---
 
 ## Code
@@ -61,7 +63,7 @@ If you are not using Git, please learn how to use it and come back to this step 
 
 ### Step 2: Download the release
 
-Go to "Releases" and download the latest release. This includes the compiled models, some materials, and the NPC sounds.
+Go to "Releases" and download the latest release. This includes the compiled models, their materials, NPC sounds, the custom font, and the demo map.
 
 Put these assets into your mod alongside the aforementioned CS:S assets.
 
