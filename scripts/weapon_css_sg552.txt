@@ -40,22 +40,22 @@ WeaponData
 	{
 		"weapon"
 		{
-				"font"		"CSS_WeaponIcons2"
-				"character"	"["
+				"font"		"CSS_WeaponIcons"
+				"character"	"A"
 		}
 		"weapon_s"
 		{	
-				"font"		"CSS_WeaponIconsSelected2"
-				"character"	"["
+				"font"		"CSS_WeaponIconsSelected"
+				"character"	"A"
 		}
 		"weapon_small"
 		{
-				"font"		"CSS_WeaponIconsSmall2"
-				"character"	"["
+				"font"		"CSS_WeaponIconsSmall"
+				"character"	"A"
 		}
 		"ammo"
 		{
-				"font"		"WeaponIconsSmall"
+				"font"		"CSS_WeaponIconsSmall2"
 				"character"	"r"
 		}
 		"crosshair"

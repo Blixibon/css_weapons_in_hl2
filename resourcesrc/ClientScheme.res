@@ -49,39 +49,11 @@ Scheme
 			}
 		}
 		
-		"CSS_WeaponIcons2"
-		{
-			"1"
-			{
-				"name"		"Counter-Strike"
-				"tall"		"92" // 64
-				"tall_hidef"	"86" // 58
-				"weight"	"0"
-				"antialias" "1"
-				"additive"	"1"
-				"custom"	"1"
-			}
-		}
-		"CSS_WeaponIconsSelected2"
-		{
-			"1"
-			{
-				"name"		"Counter-Strike"
-				"tall"		"92" // 64
-				"tall_hidef"	"86" // 58
-				"weight"	"0"
-				"antialias" "1"
-				"blur"		"5"
-				"scanlines"	"2"
-				"additive"	"1"
-				"custom"	"1"
-			}
-		}
 		"CSS_WeaponIconsSmall2"
 		{
 			"1"
 			{
-				"name"		"Counter-Strike"
+				"name"		"Counter-Strike-HL2-style"
 				"tall"		"32"
 				"weight"	"0"
 				"antialias" "1"
@@ -97,7 +69,7 @@ Scheme
 		"2"		"resource/HL2crosshairs.ttf"
 		"3"		"resource/HL2EP2.ttf"
 		"4"		"resource/cs.ttf" // CS:S weapons
-		"5"		"resource/cstrike.ttf" // CS:S weapons
+		"5"		"resource/cs_hl2_custom.ttf" // CS:S weapons
 	}
 
 }

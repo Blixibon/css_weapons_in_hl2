@@ -33,7 +33,7 @@ WeaponData
 		"single_shot_npc"	"Weapon_Glock.NPC_Single"
 		"special1"		"Weapon_Glock.Special1"
 		"special2"		"Weapon_Glock.Special2"
-		"burst"			"Weapon_Glock.Burst"
+		//"burst"			"Weapon_Glock.Burst"
 	}
 
 	// Weapon Sprite data is loaded by the Client DLL.

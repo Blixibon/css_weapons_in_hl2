@@ -38,18 +38,18 @@ WeaponData
 	{
 		"weapon"
 		{
-				"font"		"CSS_WeaponIcons2"
-				"character"	"]"
+				"font"		"CSS_WeaponIcons"
+				"character"	"B"
 		}
 		"weapon_s"
 		{	
-				"font"		"CSS_WeaponIconsSelected2"
-				"character"	"]"
+				"font"		"CSS_WeaponIconsSelected"
+				"character"	"B"
 		}
 		"weapon_small"
 		{
-				"font"		"CSS_WeaponIconsSmall2"
-				"character"	"]"
+				"font"		"CSS_WeaponIconsSmall"
+				"character"	"B"
 		}
 		"ammo"
 		{
