@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8157"
-	"mapversion" "58"
+	"mapversion" "75"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,13 +20,13 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "58"
+	"mapversion" "75"
 	"classname" "worldspawn"
-	"skyname" "sky_day01_01"
 	"chaptertitlenomessage" "1"
-	"maxpropscreenwidth" "-1"
-	"detailvbsp" "detail.vbsp"
 	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_day01_01"
 	"vscriptlanguage_client" "-2"
 }
 entity
@@ -59,7 +59,7 @@ entity
 		"OnPressed" "spawncitizen_maker,Spawn,,0,-1"
 		"OnTakeDamage" "!self,Press,,0,-1"
 	}
-	"origin" "6 40 -16"
+	"origin" "6 40 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -81,7 +81,7 @@ entity
 	"resolution" "200"
 	"targetname" "spawncitizen_label"
 	"textsize" "75"
-	"origin" "4 56 -20"
+	"origin" "4 56 -4"
 	editor
 	{
 		"color" "220 30 220"
@@ -100,9 +100,9 @@ entity
 	"message" "#HL2_CSS_Demo_ResultPanel_Current"
 	"renderamt" "255"
 	"rendercolor" "255 255 255"
-	"resolution" "200"
-	"textsize" "75"
-	"origin" "4 0 64"
+	"resolution" "100"
+	"textsize" "48"
+	"origin" "4 8 80"
 	editor
 	{
 		"color" "220 30 220"
@@ -121,10 +121,10 @@ entity
 	"message" "<none>"
 	"renderamt" "255"
 	"rendercolor" "255 193 164"
-	"resolution" "150"
+	"resolution" "125"
 	"targetname" "@resultpanel_weaponlabel"
-	"textsize" "75"
-	"origin" "4 16 48"
+	"textsize" "100"
+	"origin" "4 56 80"
 	editor
 	{
 		"color" "220 30 220"
@@ -145,8 +145,8 @@ entity
 	"rendercolor" "255 255 255"
 	"resolution" "200"
 	"targetname" "autogive_label"
-	"textsize" "75"
-	"origin" "4 -64 12"
+	"textsize" "64"
+	"origin" "4 -64 28"
 	editor
 	{
 		"color" "220 30 220"
@@ -185,7 +185,7 @@ entity
 		"OnPressed" "autogive_branch,ToggleTest,,0,-1"
 		"OnTakeDamage" "!self,Press,,0,-1"
 	}
-	"origin" "6 -80 16"
+	"origin" "6 -80 32"
 	editor
 	{
 		"color" "220 30 220"
@@ -205,7 +205,7 @@ entity
 		"OutFormattedValue" "!activator,GiveWeapon,,0,-1"
 		"OutFormattedValue" "intro_hint_resultpanel,EndHint,,0,1"
 	}
-	"origin" "0 -96 0"
+	"origin" "0 -96 16"
 	editor
 	{
 		"color" "220 30 220"
@@ -245,7 +245,7 @@ entity
 		"OnPressed" "resultpanel_curweapon,GetFormattedValue,,0,-1"
 		"OnTakeDamage" "!self,Press,,0,-1"
 	}
-	"origin" "6 -80 -16"
+	"origin" "6 -80 -32"
 	editor
 	{
 		"color" "220 30 220"
@@ -266,8 +266,8 @@ entity
 	"rendercolor" "255 255 255"
 	"resolution" "200"
 	"targetname" "giveplayer_label"
-	"textsize" "75"
-	"origin" "4 -64 -20"
+	"textsize" "64"
+	"origin" "4 -64 -36"
 	editor
 	{
 		"color" "220 30 220"
@@ -289,7 +289,7 @@ entity
 		"OnTrue" "autogive_button_sprite,Color,0 255 0,0,-1"
 		"OnTrue" "autogive_relay,Enable,,0,-1"
 	}
-	"origin" "0 -80 32"
+	"origin" "0 -80 48"
 	editor
 	{
 		"color" "220 30 220"
@@ -303,6 +303,7 @@ entity
 	"id" "305"
 	"classname" "env_sprite"
 	"framerate" "10.0"
+	"GlowProxySize" "2.0"
 	"HDRColorScale" "3.0"
 	"model" "sprites/glow01.spr"
 	"renderamt" "255"
@@ -311,8 +312,7 @@ entity
 	"scale" "0.25"
 	"spawnflags" "1"
 	"targetname" "autogive_button_sprite"
-	"GlowProxySize" "2.0"
-	"origin" "10 -80.5 18"
+	"origin" "10 -80.5 34"
 	editor
 	{
 		"color" "20 140 20"
@@ -330,7 +330,7 @@ entity
 	{
 		"OnTrigger" "resultpanel_curweapon,GetFormattedValue,,0,-1"
 	}
-	"origin" "0 -96 16"
+	"origin" "0 -96 32"
 	editor
 	{
 		"color" "220 30 220"
@@ -369,7 +369,7 @@ entity
 		"OnPressed" "spawncitizen,Kill,,0,-1"
 		"OnTakeDamage" "!self,Press,,0,-1"
 	}
-	"origin" "6 40 16"
+	"origin" "6 128 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -391,7 +391,7 @@ entity
 	"resolution" "200"
 	"targetname" "removecitizens_label"
 	"textsize" "75"
-	"origin" "4 56 12"
+	"origin" "4 144 -4"
 	editor
 	{
 		"color" "220 30 220"
