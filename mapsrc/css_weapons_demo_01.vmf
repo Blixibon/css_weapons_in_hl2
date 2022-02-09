@@ -2,7 +2,7 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "8157"
-	"mapversion" "442"
+	"mapversion" "452"
 	"formatversion" "100"
 	"prefab" "0"
 }
@@ -20,7 +20,7 @@ viewsettings
 world
 {
 	"id" "1"
-	"mapversion" "442"
+	"mapversion" "452"
 	"classname" "worldspawn"
 	"chaptertitlenomessage" "1"
 	"detailmaterial" "detail/detailsprites"
@@ -10949,6 +10949,162 @@ entity
 }
 entity
 {
+	"id" "4593"
+	"classname" "func_instance"
+	"$label" "#HL2_CSS_Demo_Ammo_357sig"
+	"$target" "@ammo_357sig_item"
+	"angles" "-0 0 0"
+	"file" "instance_csswepdemo1_ammomaker1.vmf"
+	"replace01" "$label #HL2_CSS_Demo_Ammo_357sig"
+	"replace02" "$target @ammo_357sig_item"
+	"targetname" "ammo_357sig_item"
+	"origin" "1248 0 16"
+	editor
+	{
+		"color" "172 237 0"
+		"groupid" "5050"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 9500]"
+	}
+}
+entity
+{
+	"id" "4590"
+	"classname" "item_css_ammo_357sig"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"targetname" "@ammo_357sig_item"
+	"origin" "1248 0 16"
+	editor
+	{
+		"color" "172 237 0"
+		"groupid" "5050"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 10500]"
+	}
+}
+entity
+{
+	"id" "4569"
+	"classname" "item_css_ammo_45acp"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"targetname" "@ammo_45acp_item"
+	"origin" "1248 64 16"
+	editor
+	{
+		"color" "172 105 0"
+		"groupid" "5057"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 10500]"
+	}
+}
+entity
+{
+	"id" "4565"
+	"classname" "func_instance"
+	"$label" "#HL2_CSS_Demo_Ammo_45acp"
+	"$target" "@ammo_45acp_item"
+	"angles" "-0 0 0"
+	"file" "instance_csswepdemo1_ammomaker1.vmf"
+	"replace01" "$label #HL2_CSS_Demo_Ammo_45acp"
+	"replace02" "$target @ammo_45acp_item"
+	"targetname" "ammo_45acp_item"
+	"origin" "1248 64 16"
+	editor
+	{
+		"color" "172 105 0"
+		"groupid" "5057"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 9500]"
+	}
+}
+entity
+{
+	"id" "4542"
+	"classname" "item_css_ammo_762mm"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"targetname" "@ammo_762mm_item"
+	"origin" "1248 128 16"
+	editor
+	{
+		"color" "248 125 0"
+		"groupid" "5064"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 10500]"
+	}
+}
+entity
+{
+	"id" "4544"
+	"classname" "func_instance"
+	"$label" "#HL2_CSS_Demo_Ammo_762mm"
+	"$target" "@ammo_762mm_item"
+	"angles" "-0 0 0"
+	"file" "instance_csswepdemo1_ammomaker1.vmf"
+	"replace01" "$label #HL2_CSS_Demo_Ammo_762mm"
+	"replace02" "$target @ammo_762mm_item"
+	"targetname" "ammo_762mm_item"
+	"origin" "1248 128 16"
+	editor
+	{
+		"color" "248 125 0"
+		"groupid" "5064"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 9500]"
+	}
+}
+entity
+{
+	"id" "4466"
+	"classname" "func_instance"
+	"$label" "#HL2_CSS_Demo_Ammo_556mm"
+	"$target" "@ammo_556mm_item"
+	"angles" "-0 0 0"
+	"file" "instance_csswepdemo1_ammomaker1.vmf"
+	"replace01" "$label #HL2_CSS_Demo_Ammo_556mm"
+	"replace02" "$target @ammo_556mm_item"
+	"targetname" "ammo_556mm"
+	"origin" "1248 192 16"
+	editor
+	{
+		"color" "144 161 0"
+		"groupid" "5071"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 9500]"
+	}
+}
+entity
+{
+	"id" "4517"
+	"classname" "item_css_ammo_556mm"
+	"angles" "0 180 0"
+	"fademindist" "-1"
+	"fadescale" "1"
+	"targetname" "@ammo_556mm_item"
+	"origin" "1248 192 16"
+	editor
+	{
+		"color" "144 161 0"
+		"groupid" "5071"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 10500]"
+	}
+}
+entity
+{
 	"id" "184"
 	"classname" "func_detail"
 	solid
@@ -16705,162 +16861,6 @@ entity
 }
 entity
 {
-	"id" "4593"
-	"classname" "func_instance"
-	"$label" "#HL2_CSS_Demo_Ammo_357sig"
-	"$target" "@ammo_357sig_item"
-	"angles" "-0 0 0"
-	"file" "instance_csswepdemo1_ammomaker1.vmf"
-	"replace01" "$label #HL2_CSS_Demo_Ammo_357sig"
-	"replace02" "$target @ammo_357sig_item"
-	"targetname" "ammo_357sig_item"
-	"origin" "1248 0 16"
-	editor
-	{
-		"color" "172 237 0"
-		"groupid" "5050"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 9500]"
-	}
-}
-entity
-{
-	"id" "4590"
-	"classname" "item_css_ammo_357sig"
-	"angles" "0 180 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"targetname" "@ammo_357sig_item"
-	"origin" "1248 0 16"
-	editor
-	{
-		"color" "172 237 0"
-		"groupid" "5050"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 10500]"
-	}
-}
-entity
-{
-	"id" "4569"
-	"classname" "item_css_ammo_45acp"
-	"angles" "0 180 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"targetname" "@ammo_45acp_item"
-	"origin" "1248 64 16"
-	editor
-	{
-		"color" "172 105 0"
-		"groupid" "5057"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 10500]"
-	}
-}
-entity
-{
-	"id" "4565"
-	"classname" "func_instance"
-	"$label" "#HL2_CSS_Demo_Ammo_45acp"
-	"$target" "@ammo_45acp_item"
-	"angles" "-0 0 0"
-	"file" "instance_csswepdemo1_ammomaker1.vmf"
-	"replace01" "$label #HL2_CSS_Demo_Ammo_45acp"
-	"replace02" "$target @ammo_45acp_item"
-	"targetname" "ammo_45acp_item"
-	"origin" "1248 64 16"
-	editor
-	{
-		"color" "172 105 0"
-		"groupid" "5057"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 9500]"
-	}
-}
-entity
-{
-	"id" "4542"
-	"classname" "item_css_ammo_762mm"
-	"angles" "0 180 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"targetname" "@ammo_762mm_item"
-	"origin" "1248 128 16"
-	editor
-	{
-		"color" "248 125 0"
-		"groupid" "5064"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 10500]"
-	}
-}
-entity
-{
-	"id" "4544"
-	"classname" "func_instance"
-	"$label" "#HL2_CSS_Demo_Ammo_762mm"
-	"$target" "@ammo_762mm_item"
-	"angles" "-0 0 0"
-	"file" "instance_csswepdemo1_ammomaker1.vmf"
-	"replace01" "$label #HL2_CSS_Demo_Ammo_762mm"
-	"replace02" "$target @ammo_762mm_item"
-	"targetname" "ammo_762mm_item"
-	"origin" "1248 128 16"
-	editor
-	{
-		"color" "248 125 0"
-		"groupid" "5064"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 9500]"
-	}
-}
-entity
-{
-	"id" "4466"
-	"classname" "func_instance"
-	"$label" "#HL2_CSS_Demo_Ammo_556mm"
-	"$target" "@ammo_556mm_item"
-	"angles" "-0 0 0"
-	"file" "instance_csswepdemo1_ammomaker1.vmf"
-	"replace01" "$label #HL2_CSS_Demo_Ammo_556mm"
-	"replace02" "$target @ammo_556mm_item"
-	"targetname" "ammo_556mm"
-	"origin" "1248 192 16"
-	editor
-	{
-		"color" "144 161 0"
-		"groupid" "5071"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 9500]"
-	}
-}
-entity
-{
-	"id" "4517"
-	"classname" "item_css_ammo_556mm"
-	"angles" "0 180 0"
-	"fademindist" "-1"
-	"fadescale" "1"
-	"targetname" "@ammo_556mm_item"
-	"origin" "1248 192 16"
-	editor
-	{
-		"color" "144 161 0"
-		"groupid" "5071"
-		"visgroupshown" "1"
-		"visgroupautoshown" "1"
-		"logicalpos" "[0 10500]"
-	}
-}
-entity
-{
 	"id" "5111"
 	"classname" "info_node"
 	"angles" "0 0 0"
@@ -17930,6 +17930,27 @@ entity
 		"visgroupshown" "1"
 		"visgroupautoshown" "1"
 		"logicalpos" "[1000 15500]"
+	}
+}
+entity
+{
+	"id" "6009"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "@weapon_precacher"
+	connections
+	{
+		"OnSpawn" "!self,RunScriptCode,InputPassUser1 <- function() { PrecacheOther(parameter) },0,-1"
+	}
+	"origin" "-448 496 96"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"comments" "Hack for precaching all weapons"
+		"logicalpos" "[0 0]"
 	}
 }
 cameras
