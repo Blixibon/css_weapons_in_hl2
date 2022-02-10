@@ -73,7 +73,7 @@
 @PointClass base(CSSWeapon) studio("models/weapons/w_rif_aug.mdl") = weapon_css_aug : "CS:S AUG" []
 @PointClass base(CSSWeapon) studio("models/weapons/w_rif_sg552.mdl") = weapon_css_sg552 : "CS:S SG552" []
 
-@PointClass base(CSSWeapon) studio("models/weapons/w_rif_m249.mdl") = weapon_css_m249 : "CS:S M249" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_mach_m249para.mdl") = weapon_css_m249 : "CS:S M249" []
 
 //-------------------------------------------------------------------------
 // Items
@@ -87,3 +87,13 @@
 @PointClass base(Item) studio("models/items/556mm_box.mdl")= item_css_ammo_556mm_large : "Large Box of 5.56 NATO ammo" []
 @PointClass base(Item) studio("models/items/762mm_box.mdl")= item_css_ammo_762mm : "Box of 7.62 NATO ammo" []
 @PointClass base(Item) studio("models/items/762mm_box.mdl")= item_css_ammo_762mm_large : "Large Box of 7.62 NATO ammo" []
+
+//-------------------------------------------------------------------------
+
+@PointClass base(item_dynamic_resupply) studio("models/items/healthkit.mdl") = item_css_dynamic_resupply : "A version of item_dynamic_resupply which supports CS:S ammo spawning."
+[
+	DesiredAmmo45ACP(float) : "Desired .45 ACP Ammo Ratio" : "0" : "A ratio from 0 to 1. Attempt to fill the player up to this percentage of their max ammo carrying capacity."
+	DesiredAmmo357SIG(float) : "Desired .357 SIG Ammo Ratio" : "0" : "A ratio from 0 to 1. Attempt to fill the player up to this percentage of their max ammo carrying capacity."
+	DesiredAmmo556mm(float) : "Desired 556mm Ammo Ratio" : "0" : "A ratio from 0 to 1. Attempt to fill the player up to this percentage of their max ammo carrying capacity."
+	DesiredAmmo762mm(float) : "Desired 762mm Ammo Ratio" : "0" : "A ratio from 0 to 1. Attempt to fill the player up to this percentage of their max ammo carrying capacity."
+]
