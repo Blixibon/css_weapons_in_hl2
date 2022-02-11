@@ -20,7 +20,7 @@ Here's a small list of some notable changes these weapons have from their origin
 		* The Five-SeveN and P90 use 9mm instead of 5.7×28mm.
 		* The Deagle uses .357 Magnum ammo instead of .50AE.
 	* **Ammo type port examples:**
-		* The main rifle cartridge, 5.56 NATO, is replicated in HL2 and uses a player damage output in between the HL2 Pistol and the HL2 AR2.
+		* The main rifle cartridge, 5.56 NATO, is replicated in HL2 and uses the same damage output as the HL2 AR2.
 		* The P228 cartridge, .357 SIG, is replicated in HL2 and deals half the damage output of HL2's .357 Magnum.
 	* Some weapons still have variable damage different from their ammo types to try to mimic CS:S. (e.g. Dual Berettas are more powerful and Silenced USPs are weaker)
 * All weapon classnames have "_css" in the middle of them. (e.g. `weapon_css_glock`)
@@ -51,7 +51,7 @@ This requires the following stock Counter-Strike: Source assets which are not in
 * `materials/models/weapons/w_models` - Materials and textures used by the CS:S weapon worldmodels. *(entire folder)*
 * `materials/models/weapons/v_models` - Materials and textures used by the CS:S weapon viewmodels. *(entire folder)*
 * `sound/weapons` - Sounds used by the CS:S weapons. *(entire folder)*
-* `resource/cs.ttf` - The font containing most of the CS:S weapon icons.
+* `resource/cs.ttf` - The font containing the CS:S weapon icons.
 
 ---
 
@@ -86,6 +86,77 @@ This repository has a `bin` folder with a FGD you can use in Hammer to spawn CS:
 ### Conclusion
 
 That should be everything. Open issues on this GitHub repo if you have any problems.
+
+---
+
+## Weapon Table
+
+The following table lists each ported CS:S weapon and how their ammo types/player damage outputs have been changed.
+
+##### Legend
+* *"CS:S Ammo"* and *"CS:S Damage"* list each weapon's original ammo type and damage output in Counter-Strike: Source.
+* *"HL2 Ammo"* shows what Half-Life 2 ammo type each weapon was adapted to in this project.
+* *"Damage Formula"* shows how the player damage output was modified from the base ammo type's player damage to better-replicate CS:S's damage output.
+
+##### Notes
+* HL2 ammo types in bold italic are new ammo types ported from CS:S.
+* This table does not currently list NPC damage output or how each weapon's inaccuracy/recoil values translated to spread and viewkick values. These elements may be listed in the future.
+
+#### Pistols
+
+|	Name		|	CS:S Ammo		| CS:S Damage	| HL2 Ammo	| Damage Formula		| Final Damage Output		|
+|:------------- |:-----------------------------:|:---------------------:|:-------------------------:|:-------------------------:|:---------------------------------:|
+| Glock-18|9mm|25|9mm|5|5|
+| USP|.45 ACP|34|***.45 ACP***|7 * 1.1|8|
+| USP *(Silenced)*|.45 ACP|29|***.45 ACP***|7 * 0.9|6|
+| P228|.357 SIG|40|***.357 SIG***|20|20|
+| Desert Eagle|.50AE|54|.357|40 * 0.9|36|
+| Five-SeveN|5.7x28mm|25|9mm|5|5|
+| Dual Berettas|9mm|45|9mm|5 * 1.4|7|
+
+#### Shotguns
+
+|	Name		|	CS:S Ammo		| CS:S Damage	| HL2 Ammo	| Damage Formula		| Final Damage Output		|
+|:------------- |:-----------------------------:|:---------------------:|:-------------------------:|:-------------------------:|:---------------------------------:|
+| M3|12-gauge|26|Buckshot|8 * 9 pellets|Up to 72|
+| XM1014|12-gauge|22|Buckshot|8 * 6 pellets|Up to 48|
+
+#### SMGs
+
+|	Name		|	CS:S Ammo		| CS:S Damage	| HL2 Ammo	| Damage Formula		| Final Damage Output		|
+|:------------- |:-----------------------------:|:---------------------:|:-------------------------:|:-------------------------:|:---------------------------------:|
+| TMP|9mm|26|9mm|5|5|
+| MAC-10|.45 ACP|28|***.45 ACP***|7|7|
+| MP5|9mm|25|9mm|5|5|
+| UMP-45|.45 ACP|29|***.45 ACP***|7|7|
+| P90|5.7x28mm|25|9mm|5|5|
+
+#### Rifles
+
+|	Name		|	CS:S Ammo		| CS:S Damage	| HL2 Ammo	| Damage Formula		| Final Damage Output		|
+|:------------- |:-----------------------------:|:---------------------:|:-------------------------:|:-------------------------:|:---------------------------------:|
+| Galil|5.56mm|30|***5.56mm***|8|8|
+| FAMAS|5.56mm|29|***5.56mm***|8 * 0.9|7|
+| AK-47|7.62mm|36|***7.62mm***|9|9|
+| M4A1|5.56mm|31|***5.56mm***|8|8|
+| M4A1 *(Silenced)*|5.56mm|32|***5.56mm***|8|8|
+| SG552|5.56mm|33|***5.56mm***|8|8|
+| AUG|5.56mm|31|***5.56mm***|8|8|
+
+#### Sniper Rifles
+
+|	Name		|	CS:S Ammo		| CS:S Damage	| HL2 Ammo	| Damage Formula		| Final Damage Output		|
+|:------------- |:-----------------------------:|:---------------------:|:-------------------------:|:-------------------------:|:---------------------------------:|
+| Scout|7.62mm|75|***7.62mm***|9 * 3.4|30|
+| SG550|7.62mm|70|***5.56mm***|8 * 3.1|25|
+| AWP|.338 Lapua|115|.357|40 * 1.5|60|
+| G3SG1|7.62mm|80|***7.62mm***|9 * 3.6|32|
+
+#### Other
+
+|	Name		|	CS:S Ammo		| CS:S Damage	| HL2 Ammo	| Damage Formula		| Final Damage Output		|
+|:------------- |:-----------------------------:|:---------------------:|:-------------------------:|:-------------------------:|:---------------------------------:|
+| M249|7.62mm|35|***7.62mm***|9|9|
 
 ---
 
