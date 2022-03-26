@@ -6,7 +6,7 @@
 // 
 //=============================================================================
 
-@BaseClass color(0 0 200) base(Weapon) sphere(fademindist) sphere(fademaxdist) = CSSWeapon
+@BaseClass color(0 0 200) base(Weapon) = CSSWeapon
 [
 ]
 
@@ -50,47 +50,47 @@
 // Weapons
 //-------------------------------------------------------------------------
 
-@PointClass base(CSSWeapon,CSSWeaponBurstable) studio("models/weapons/w_pist_glock18.mdl") = weapon_css_glock : "CS:S Glock-18" []
-@PointClass base(CSSWeapon,CSSWeaponSilencable) studio("models/weapons/w_pist_usp.mdl") = weapon_css_usp : "CS:S USP-45" []
-@PointClass base(CSSWeapon)	studio("models/weapons/w_pist_p228.mdl") = weapon_css_p228 : "CS:S P228" []
-@PointClass base(CSSWeapon)	studio("models/weapons/w_pist_deagle.mdl") = weapon_css_deagle : "CS:S Desert Eagle" []
-@PointClass base(CSSWeapon)	studio("models/weapons/w_pist_fiveseven.mdl") = weapon_css_fiveseven : "CS:S Five-SeveN" []
-@PointClass base(CSSWeapon)	studio("models/weapons/w_pist_elite.mdl") = weapon_css_elite : "CS:S Dual Berettas" []
+@PointClass base(CSSWeapon,CSSWeaponBurstable) studio("models/weapons/w_pist_glock18.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_glock : "CS:S Glock-18" []
+@PointClass base(CSSWeapon,CSSWeaponSilencable) studio("models/weapons/w_pist_usp.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_usp : "CS:S USP-45" []
+@PointClass base(CSSWeapon)	studio("models/weapons/w_pist_p228.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_p228 : "CS:S P228" []
+@PointClass base(CSSWeapon)	studio("models/weapons/w_pist_deagle.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_deagle : "CS:S Desert Eagle" []
+@PointClass base(CSSWeapon)	studio("models/weapons/w_pist_fiveseven.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_fiveseven : "CS:S Five-SeveN" []
+@PointClass base(CSSWeapon)	studio("models/weapons/w_pist_elite_dropped.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_elite : "CS:S Dual Berettas" []
 
-@PointClass base(CSSWeapon) studio("models/weapons/w_shot_m3super90.mdl") = weapon_css_m3 : "CS:S M3" []
-@PointClass base(CSSWeapon) studio("models/weapons/w_shot_xm1014.mdl") = weapon_css_xm1014 : "CS:S XM1014" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_shot_m3super90.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_m3 : "CS:S M3" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_shot_xm1014.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_xm1014 : "CS:S XM1014" []
 
-@PointClass base(CSSWeapon) studio("models/weapons/w_smg_tmp.mdl") = weapon_css_tmp : "CS:S TMP" []
-@PointClass base(CSSWeapon) studio("models/weapons/w_smg_mac10.mdl") = weapon_css_mac10 : "CS:S MAC-10" []
-@PointClass base(CSSWeapon) studio("models/weapons/w_smg_mp5.mdl") = weapon_css_mp5 : "CS:S MP5" []
-@PointClass base(CSSWeapon) studio("models/weapons/w_smg_ump45.mdl") = weapon_css_ump45 : "CS:S UMP-45" []
-@PointClass base(CSSWeapon) studio("models/weapons/w_smg_p90.mdl") = weapon_css_p90 : "CS:S P90" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_smg_tmp.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_tmp : "CS:S TMP" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_smg_mac10.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_mac10 : "CS:S MAC-10" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_smg_mp5.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_mp5 : "CS:S MP5" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_smg_ump45.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_ump45 : "CS:S UMP-45" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_smg_p90.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_p90 : "CS:S P90" []
 
-@PointClass base(CSSWeapon) studio("models/weapons/w_rif_galil.mdl") = weapon_css_galil : "CS:S Galil" []
-@PointClass base(CSSWeapon,CSSWeaponBurstable) studio("models/weapons/w_rif_famas.mdl") = weapon_css_famas : "CS:S FAMAS" []
-@PointClass base(CSSWeapon) studio("models/weapons/w_rif_ak47.mdl") = weapon_css_ak47 : "CS:S AK-47" []
-@PointClass base(CSSWeapon,CSSWeaponSilencable) studio("models/weapons/w_rif_m4a1.mdl") = weapon_css_m4a1 : "CS:S M4A1" []
-@PointClass base(CSSWeapon) studio("models/weapons/w_rif_aug.mdl") = weapon_css_aug : "CS:S AUG" []
-@PointClass base(CSSWeapon) studio("models/weapons/w_rif_sg552.mdl") = weapon_css_sg552 : "CS:S SG552" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_rif_galil.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_galil : "CS:S Galil" []
+@PointClass base(CSSWeapon,CSSWeaponBurstable) studio("models/weapons/w_rif_famas.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_famas : "CS:S FAMAS" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_rif_ak47.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_ak47 : "CS:S AK-47" []
+@PointClass base(CSSWeapon,CSSWeaponSilencable) studio("models/weapons/w_rif_m4a1.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_m4a1 : "CS:S M4A1" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_rif_aug.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_aug : "CS:S AUG" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_rif_sg552.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_sg552 : "CS:S SG552" []
 
-@PointClass base(CSSWeapon) studio("models/weapons/w_mach_m249para.mdl") = weapon_css_m249 : "CS:S M249" []
+@PointClass base(CSSWeapon) studio("models/weapons/w_mach_m249para.mdl") sphere(fademindist) sphere(fademaxdist) = weapon_css_m249 : "CS:S M249" []
 
 //-------------------------------------------------------------------------
 // Items
 //-------------------------------------------------------------------------
 
-@PointClass base(Item) studio("models/items/45acp_box.mdl")= item_css_ammo_45acp : "Box of .45 ACP ammo" []
-@PointClass base(Item) studio("models/items/45acp_box.mdl")= item_css_ammo_45acp_large : "Large Box of .45 ACP ammo" []
-@PointClass base(Item) studio("models/items/357sig_box.mdl")= item_css_ammo_357sig : "Box of 357 SIG ammo" []
-@PointClass base(Item) studio("models/items/357sig_box.mdl")= item_css_ammo_357sig_large : "Large Box of 357 SIG ammo" []
-@PointClass base(Item) studio("models/items/556mm_box.mdl")= item_css_ammo_556mm : "Box of 5.56 NATO ammo" []
-@PointClass base(Item) studio("models/items/556mm_box.mdl")= item_css_ammo_556mm_large : "Large Box of 5.56 NATO ammo" []
-@PointClass base(Item) studio("models/items/762mm_box.mdl")= item_css_ammo_762mm : "Box of 7.62 NATO ammo" []
-@PointClass base(Item) studio("models/items/762mm_box.mdl")= item_css_ammo_762mm_large : "Large Box of 7.62 NATO ammo" []
+@PointClass base(Item) studio("models/items/45acp_box.mdl") sphere(fademindist) sphere(fademaxdist) = item_css_ammo_45acp : "Box of .45 ACP ammo" []
+@PointClass base(Item) studio("models/items/45acp_box.mdl") sphere(fademindist) sphere(fademaxdist) = item_css_ammo_45acp_large : "Large Box of .45 ACP ammo" []
+@PointClass base(Item) studio("models/items/357sig_box.mdl") sphere(fademindist) sphere(fademaxdist) = item_css_ammo_357sig : "Box of 357 SIG ammo" []
+@PointClass base(Item) studio("models/items/357sig_box.mdl") sphere(fademindist) sphere(fademaxdist) = item_css_ammo_357sig_large : "Large Box of 357 SIG ammo" []
+@PointClass base(Item) studio("models/items/556mm_box.mdl") sphere(fademindist) sphere(fademaxdist) = item_css_ammo_556mm : "Box of 5.56 NATO ammo" []
+@PointClass base(Item) studio("models/items/556mm_box.mdl") sphere(fademindist) sphere(fademaxdist) = item_css_ammo_556mm_large : "Large Box of 5.56 NATO ammo" []
+@PointClass base(Item) studio("models/items/762mm_box.mdl") sphere(fademindist) sphere(fademaxdist) = item_css_ammo_762mm : "Box of 7.62 NATO ammo" []
+@PointClass base(Item) studio("models/items/762mm_box.mdl") sphere(fademindist) sphere(fademaxdist) = item_css_ammo_762mm_large : "Large Box of 7.62 NATO ammo" []
 
 //-------------------------------------------------------------------------
 
-@PointClass base(item_dynamic_resupply) studio("models/items/healthkit.mdl") = item_css_dynamic_resupply : "A version of item_dynamic_resupply which supports CS:S ammo spawning."
+@PointClass base(item_dynamic_resupply) studio("models/items/healthkit.mdl") sphere(fademindist) sphere(fademaxdist) = item_css_dynamic_resupply : "A version of item_dynamic_resupply which supports CS:S ammo spawning."
 [
 	DesiredAmmo45ACP(float) : "Desired .45 ACP Ammo Ratio" : "0" : "A ratio from 0 to 1. Attempt to fill the player up to this percentage of their max ammo carrying capacity."
 	DesiredAmmo357SIG(float) : "Desired .357 SIG Ammo Ratio" : "0" : "A ratio from 0 to 1. Attempt to fill the player up to this percentage of their max ammo carrying capacity."
