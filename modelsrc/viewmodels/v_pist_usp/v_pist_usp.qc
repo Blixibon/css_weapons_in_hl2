@@ -68,10 +68,6 @@ $sequence "shoot3" {
 $sequence "shootlast" {
 	"shootlast.smd"
 	activity "ACT_VM_DRYFIRE_SILENCED" 1
-	{ event AE_MUZZLEFLASH 0 "PISTOL MUZZLE_SIL" }
-	//{ event 5001 0 "1" }
-	fadein 0.2
-	fadeout 0.2
 	snap
 	fps 32
 }
@@ -144,8 +140,6 @@ $sequence "shoot3_unsil" {
 $sequence "shootlast_unsil" {
 	"shootlast_unsil.smd"
 	activity "ACT_VM_DRYFIRE" 1
-	{ event AE_MUZZLEFLASH 0 "PISTOL MUZZLE" }
-	//{ event 5001 0 "1" }
 	snap
 }
 

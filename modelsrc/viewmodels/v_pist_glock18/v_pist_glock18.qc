@@ -86,7 +86,6 @@ $sequence "glock_firesingle" {
 $sequence "glock_firelast" {
 	"glock_firelast.smd"
 	activity "ACT_VM_DRYFIRE" 1
-	{ event 5001 0 "21" }
 	snap
 	fps 35
 }

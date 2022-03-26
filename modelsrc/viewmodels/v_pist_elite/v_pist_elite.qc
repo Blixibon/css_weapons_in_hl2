@@ -98,10 +98,6 @@ $sequence "shoot_right2" {
 $sequence "shoot_rightlast" {
 	"shoot_rightlast.smd"
 	activity "ACT_VM_DRYFIRE" 1
-	{ event AE_MUZZLEFLASH 1 "PISTOL MUZZLE" }
-	{ event 6001 0 "0" }
-	//{ event 5001 1 "1" }
-	//{ event AE_CLIENT_EFFECT_ATTACH 0 "EjectBrass_9mm 3 90" }
 	snap
 	fps 18
 }

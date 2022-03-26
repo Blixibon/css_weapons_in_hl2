@@ -70,7 +70,6 @@ $sequence "shoot3" {
 $sequence "shoot_empty" {
 	"shoot_empty.smd"
 	activity "ACT_VM_DRYFIRE" 1
-	//{ event 5001 0 "11" }
 	fps 34
 }
 
