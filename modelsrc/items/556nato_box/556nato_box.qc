@@ -25,7 +25,8 @@ $cdmaterials "models\items\"
 
 $cbox 0 0 0 0 0 0
 
-$bbox -6.105 -9.972 -0.345 6.105 9.972 13.572
+// Generate a new bounding box
+//$bbox -6.105 -9.972 -0.345 6.105 9.972 13.572
 
 $definebone "static_prop" "" 0 0 0 0 0 0 0 0 0 0 0 0
 
