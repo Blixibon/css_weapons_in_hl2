@@ -2,15 +2,16 @@
 
 $modelname "weapons\v_pist_glock18.mdl"
 
-$scale 1.3
-
-$bodygroup "studio"
-{
-	studio "glock18_reference.smd"
-}
+$scale 1.0
 $bodygroup "hands"
 {
 	studio "../hands_reference.smd"
+}
+
+$scale 1.3
+$bodygroup "studio"
+{
+	studio "glock18_reference.smd"
 }
 
 $surfaceprop "default"

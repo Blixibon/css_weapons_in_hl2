@@ -2,15 +2,16 @@
 
 $modelname "weapons\v_snip_g3sg1.mdl"
 
-$scale 1.3
-
-$bodygroup "studio"
-{
-	studio "g3sg1_reference.smd"
-}
+$scale 1.0
 $bodygroup "hands"
 {
 	studio "../hands_reference.smd"
+}
+
+$scale 1.3
+$bodygroup "studio"
+{
+	studio "g3sg1_reference.smd"
 }
 
 

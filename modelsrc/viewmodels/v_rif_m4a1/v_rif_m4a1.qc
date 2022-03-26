@@ -2,15 +2,16 @@
 
 $modelname "weapons\v_rif_m4a1.mdl"
 
-$scale 1.3
-
-$bodygroup "studio"
-{
-	studio "m4a1_reference.smd"
-}
+$scale 1.0
 $bodygroup "hands"
 {
 	studio "../hands_reference.smd"
+}
+
+$scale 1.3
+$bodygroup "studio"
+{
+	studio "m4a1_reference.smd"
 }
 
 

@@ -2,8 +2,13 @@
 
 $modelname "weapons\v_mach_m249para.mdl"
 
-$scale 1.3
+$scale 1.0
+$bodygroup "hands"
+{
+	studio "../hands_reference.smd"
+}
 
+$scale 1.3
 $bodygroup "studio"
 {
 	studio "v_m249_reference.smd"

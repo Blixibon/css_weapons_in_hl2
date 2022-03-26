@@ -2,15 +2,16 @@
 
 $modelname "weapons\v_pist_p228.mdl"
 
-$scale 1.3
-
-$bodygroup "studio"
-{
-	studio "p228_reference.smd"
-}
+$scale 1.0
 $bodygroup "hands"
 {
 	studio "../hands_reference.smd"
+}
+
+$scale 1.3
+$bodygroup "studio"
+{
+	studio "p228_reference.smd"
 }
 
 $surfaceprop "default"

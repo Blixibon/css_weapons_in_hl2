@@ -2,8 +2,13 @@
 
 $modelname "weapons\v_pist_elite.mdl"
 
-$scale 1.3
+$scale 1.0
+$bodygroup "hands"
+{
+	studio "../hands_reference.smd"
+}
 
+$scale 1.3
 $bodygroup "studio"
 {
 	studio "v_elite_reference.smd"

@@ -2,17 +2,18 @@
 
 $modelname "weapons\v_shot_xm1014.mdl"
 
-$scale 1.3
-
-$bodygroup "studio"
-{
-	studio "xm1014_reference.smd"
-}
+$scale 1.0
 $bodygroup "hands"
 {
 	studio "../hands_reference.smd"
 }
 
+
+$scale 1.3
+$bodygroup "studio"
+{
+	studio "xm1014_reference.smd"
+}
 
 $surfaceprop "default"
 

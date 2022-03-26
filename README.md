@@ -166,14 +166,14 @@ The following table lists each ported CS:S weapon and how their ammo types/playe
 * Counter-Strike: Source - All decompiled models, the original hand texture sheet, and a few of the scripts originate from Counter-Strike: Source.
 * Blender and Blender Source Tools - Used to adjust the bones on the CS:S worldmodels to target HL2 skeletons.
 * Birdfont - Used to modify HL2's ammo icons and create `cs_hl2_custom.ttf`.
+* beefbacon - The HEV suit arms rerigged to the CS:S viewmodel skeleton.
 * Blixibon - Everything else, including porting the weapons themselves and modifying them to work in a Source SDK 2013/Half-Life 2 environment.
 
 ---
 
 ## Things which would be nice but are not currently planned
 
-* Actual HEV suit arms on the CS:S viewmodel rig instead of retexturing the CS:S arms *(would share the original HL2 hand sheet)*
-	* Putting the CS:S viewmodels on `ValveBiped.Bip01` would be more preferable since it would allow any standard arm models to be used, but that would require reanimating all of them
+* Putting the CS:S viewmodels on `ValveBiped.Bip01`, which would require reanimating all of them
 * Scope overlays for sniper rifles
 * Knife and Grenades
 * Dual Berettas for NPCs
